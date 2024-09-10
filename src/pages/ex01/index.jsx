@@ -49,7 +49,7 @@ export default function E01() {
                         </div>
                         <button href='#' className='executar' onClick={calcularValorTotal}>Executar</button>
                     </div>
-                    <h3 className='resultado'>Resultado: O total é R$ {valorTotal.toFixed(2)}</h3>
+                    <h3 className='resultado'>Resultado: O total é R$ {valorTotal}</h3>
                 </div>
 
             </div>

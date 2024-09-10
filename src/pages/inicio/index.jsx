@@ -28,6 +28,20 @@ export default function Inicio() {
                             <h4 className='subtitulo'>Exercício 1</h4>
                         </div>
                     </Link>
+                    <Link to='/e02' className='link'>
+                        <div className='card'>
+                            <div className='retangulo verde-lima'/>
+                            <h3 className='titulo'>Converter KG/Grama</h3>
+                            <h4 className='subtitulo'>Exercício 02</h4>
+                        </div>
+                    </Link>
+                    <Link to='/e04' className='link'>
+                        <div className='card'>
+                            <div className='retangulo azul'/>
+                            <h3 className='titulo'>Leitura de livro</h3>
+                            <h4 className='subtitulo'>Exercício 04</h4>
+                        </div>
+                    </Link>
                     <Link to='/e11' className='link'>
                         <div className='card'>
                             <div className='retangulo roxo'/>

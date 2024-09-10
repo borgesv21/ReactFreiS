@@ -8,6 +8,7 @@ export default function E11() {
 
     function calcularTabuada() {
         let tabuada = []
+
        
         for (let i = 1; i <= 10; i++) {
             tabuada.push(`${valor} x ${i} = ${valor * i}`)
@@ -17,6 +18,15 @@ export default function E11() {
         
         // Dica:
         // tabuada.push
+
+
+        for (let i = 0; i <= 10; i++) {
+            let resultado = i * valor
+            let tabuadaTexto = `${valor} x ${i} = ${resultado}`
+
+            tabuada.push(tabuadaTexto)
+        }
+
 
         setTabuadas(tabuada)
     }
@@ -50,11 +60,17 @@ export default function E11() {
                     <div className='campos'>
                         <div className='campo'>
                             <label>Tabuada do:</label>
-                            <input placeholder='0' onChange={e => setValor(e.target.value)} />
+                            <input 
+                                placeholder='0' 
+                                onChange={e => setValor(e.target.value)} 
+                            />
                         </div>
                         
-                        <button className='executar' onClick={calcularTabuada}>Executar</button>
+                        <button 
+                            className='executar' 
+                            onClick={calcularTabuada}>Executar</button>
                     </div>
+
                     
                     <div className='resultados'>
                         {tabuadas.map((tabuadas, index) => 
@@ -63,6 +79,13 @@ export default function E11() {
                             </h3>
                         )}
                     </div>
+
+                    {
+                        tabuadas.map(
+                            linha => <p>{linha}</p>
+                        )
+                    }
+
                 </div>
             </div>
         </div>
